@@ -35,7 +35,18 @@ Advanced patterns and complex orchestration:
 - Complex data pipelines
 - Real-time event processing
 - Feedback loops and learning mechanisms
-- **Status**: In Development
+- **File**: `j1-version fz.json`
+
+### [Day 4: Agent Memory & Persistence](./Day%204/README.md)
+Enterprise-grade agent memory and intelligent routing:
+- Persistent agent memory with MongoDB integration
+- Context-aware reasoning with historical data
+- Intelligent message routing and categorization
+- Multi-path orchestration and specialized handlers
+- Database-backed conversation management
+- **Files**: 
+  - `Agenet memory - MongoDB.json` (Persistent memory system)
+  - `Agent memory - Message History.json` (Smart routing system)
 
 ## 🔧 Technical Stack
 
@@ -44,6 +55,8 @@ Advanced patterns and complex orchestration:
 - **Workflow Platform**: Visual workflow definition (JSON-based)
 - **Data Processing**: Type conversion and parsing components
 - **Routing Logic**: Smart routing and conditional logic
+- **Persistence**: MongoDB for agent memory storage
+- **Code Execution**: Python REPL for dynamic code generation and execution
 
 ### Architecture Patterns
 - **Component-Based Design**: Modular, reusable workflow components
@@ -59,6 +72,8 @@ Advanced patterns and complex orchestration:
 - **SmartRouter**: Intelligent routing logic
 - **TypeConverter**: Data type conversion and normalization
 - **Parser**: Data extraction and structuring
+- **MongoDBComponent**: Database queries and persistent storage
+- **PythonREPL**: Dynamic Python code generation and execution
 
 ## 🚀 Getting Started
 
@@ -86,6 +101,26 @@ Output: Classified as "Administrative" | Route to Finance Team
 ```
 Input: "My account is locked and I can't reset my password"
 Output: Classified as "High Priority Account Issue" | Route to Account Recovery Team
+```
+
+#### Agent Memory & Persistence (Day 4)
+**MongoDB Workflow:**
+```
+Input: "Rappelle-moi ce que j'ai demandé hier"
+Memory: [Queries MongoDB for session history]
+Output: {
+  "message_user": "Rappelle-moi ce que j'ai demandé hier",
+  "reponse": "Hier, vous aviez posé des questions sur les délais du projet...",
+  "confidence": 0.92
+}
+```
+
+**Message Router Workflow:**
+```
+Input: "My invoice shows an incorrect amount"
+Detection: Billing category identified
+Route: Administrative handler
+Output: Specialized response with billing information and next steps
 ```
 
 ## 📖 Documentation
@@ -120,6 +155,10 @@ By completing this specialization, you will understand:
 - ✅ Intelligent routing and decision-making
 - ✅ Practical business applications of AI agents
 - ✅ Scalability and production considerations
+- ✅ Persistent agent memory systems with databases
+- ✅ Context-aware reasoning with historical data
+- ✅ Multi-path orchestration and routing strategies
+- ✅ Dynamic code generation and sandboxed execution
 
 ## 🔮 Future Enhancements
 
