@@ -48,6 +48,16 @@ Enterprise-grade agent memory and intelligent routing:
   - `Agenet memory - MongoDB.json` (Persistent memory system)
   - `Agent memory - Message History.json` (Smart routing system)
 
+### [Day 5: Evaluation & Task Tracker](./Day%205/README.md)
+Advanced task evaluation and management system:
+- Intelligent message routing with LLM-based categorization
+- Task evaluation with anomaly detection
+- Multi-backend persistence (MongoDB + Notion)
+- Dynamic Python code execution for analysis
+- Third-party integrations and API coordination
+- Quality assurance and data validation
+- **File**: `Eval_task_tracker.json`
+
 ## 🔧 Technical Stack
 
 ### Core Technologies
@@ -57,6 +67,7 @@ Enterprise-grade agent memory and intelligent routing:
 - **Routing Logic**: Smart routing and conditional logic
 - **Persistence**: MongoDB for agent memory storage
 - **Code Execution**: Python REPL for dynamic code generation and execution
+- **Third-Party Integration**: Notion API for dashboard and task management
 
 ### Architecture Patterns
 - **Component-Based Design**: Modular, reusable workflow components
@@ -69,11 +80,13 @@ Enterprise-grade agent memory and intelligent routing:
 ### Common Components Used
 - **TextInput/ChatInput**: Input interface for data and messages
 - **GroqModel**: LLM inference component
-- **SmartRouter**: Intelligent routing logic
+- **SmartRouter**: Intelligent routing logic with LLM-based categorization
 - **TypeConverter**: Data type conversion and normalization
 - **Parser**: Data extraction and structuring
 - **MongoDBComponent**: Database queries and persistent storage
 - **PythonREPL**: Dynamic Python code generation and execution
+- **Message History**: Store/retrieve conversation history
+- **Notion Page Creator**: Third-party integration for task management
 
 ## 🚀 Getting Started
 
@@ -159,6 +172,9 @@ By completing this specialization, you will understand:
 - ✅ Context-aware reasoning with historical data
 - ✅ Multi-path orchestration and routing strategies
 - ✅ Dynamic code generation and sandboxed execution
+- ✅ Third-party API integration and orchestration
+- ✅ Quality assurance and anomaly detection in workflows
+- ✅ Task evaluation and multi-backend persistence
 
 ## 🔮 Future Enhancements
 
