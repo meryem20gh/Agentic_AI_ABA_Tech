@@ -13,29 +13,27 @@ Ce workflow agentique gère l'orchestration, l'analyse et le routage intelligent
 
 Le workflow est structuré autour d'un pipeline d'extraction de contexte suivi d'un aiguillage intelligent vers trois branches d'exécution dédiées :
 
+```text
                     [ Chat Input ]
                           │
                           ▼
                   [ Prompt Template ]
                           │
                           ▼
-                   [ Groq Model ]
+                    [ Groq Model ]
                           │
                           ▼
                    [ Smart Router ]
                           │
-   ┌──────────────────────┼──────────────────────┐
-   ▼                      ▼                      ▼
-[Task Execution]       [Anomaly Route]        [Historical Query]
-│                      │                      │
-[Parser Node]          [Parser Node]          [MongoDB Query]
-│                      │                      │
-[MongoDB Query]      [Notion Page Creator]    [Chat Output]
+    ┌─────────────────────┼─────────────────────┐
+    ▼                     ▼                     ▼
+[Task Execution]   [Anomaly Route]    [Historical Query]
+│                  │                  │
+[Parser Node]      [Parser Node]      [MongoDB Query]
+│                  │                  │
+[MongoDB Query]  [Notion Page Creator]  [Chat Output]
 │
-[Save To File]
-
-
----
+[Write File]
 
 ## 🛠️ Description Détaillée des Composants
 
@@ -70,4 +68,4 @@ Pour déployer et exécuter ce fichier de workflow, les secrets et configuration
 * **Groq API** : Une clé d'API valide configurée sur le nœud `GroqModel`.
 * **MongoDB** : L'URI de connexion (`mongodb+srv://...`), le nom de la base de données et de la collection cible.
 * **Notion API** : Le Token d'intégration Notion (`Notion Secret`) et l'identifiant unique de la base de données Notion (`Database ID`).
-* **Permissions Locales** : Droits d'écriture requis sur l'environnement d'exécution pour le nœud `SaveToFile`.
+* **Permissions Locales** : Droits d'écriture requis sur l'environnement d'exécution pour le nœud `Write File`.
