@@ -58,6 +58,15 @@ Advanced task evaluation and management system:
 - Quality assurance and data validation
 - **File**: `Eval_task_tracker.json`
 
+### [Day 6: RAG-Powered Legal Document Assistant](./Day%206/README.md)
+Retrieval-Augmented Generation workflow for legal Q&A:
+- Legal document ingestion and text chunking
+- Embedding generation with Google Generative AI
+- Chroma DB semantic retrieval
+- Prompt-driven legal assistant responses via Groq
+- Strict context-only answer generation
+- **File**: `j6-RAG.json`
+
 ## 🔧 Technical Stack
 
 ### Core Technologies
