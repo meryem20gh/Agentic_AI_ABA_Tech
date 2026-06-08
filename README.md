@@ -67,6 +67,42 @@ Retrieval-Augmented Generation workflow for legal Q&A:
 - Strict context-only answer generation
 - **File**: `j6-RAG.json`
 
+### [Day 7: Hybrid RAG Retrieval](./Day%207/README.md)
+Advanced retrieval workflow that improves document selection:
+- Hybrid semantic + keyword retrieval
+- Reciprocal Rank Fusion (RRF) for better context ranking
+- Python-based fusion logic before answer generation
+- Stronger grounding for question-answering workflows
+- **File**: `j7-RAG hybrid (2).json`
+
+### [Day 8: Structured Data Extraction](./Day%208/README.md)
+Structured extraction workflow for converting raw text into validated JSON output:
+- LLM-based extraction from unstructured input
+- Schema-guided structured output generation
+- Pydantic validation for reliable field types
+- Type conversion for downstream automation
+- **Files**:
+  - `extraction.json`
+  - `extraction pydatic.json`
+
+### [Day 9: Security Guard & DB-Aware Threat Detection](./Day%209/README.md)
+Security-first workflow focused on prompt-injection filtering and safe routing:
+- Prompt-injection and jailbreak detection
+- Smart routing between safe and unsafe requests
+- Groq-based justification and response handling
+- Database-enabled tool integration in the DB variant
+- **Files**:
+  - `Agent security.json`
+  - `Agent security DB.json`
+
+### [Day 10: HR Assistant](./Day%2010/README.md)
+HR-focused assistant workflow for grounded employee and policy support:
+- Retrieval-based answer generation using Chroma
+- Prompt templating with relevant context
+- Python-based processing and LLM reasoning
+- Chat-based HR support experience
+- **File**: `HR assistant.json`
+
 ## 🔧 Technical Stack
 
 ### Core Technologies
@@ -226,6 +262,6 @@ This repository demonstrates:
 
 ---
 
-**Last Updated**: May 2026  
+**Last Updated**: June 2026  
 **Program**: Generation AIoT - Agentic AI Specialization  
 **Repository**: Agentic_AI_ABA_Tech
